@@ -13,6 +13,9 @@ class Device:
         print('Username: {}'.format(self.username))
         print('Password: {}'.format(self.password))
 
+    def add_vendor(self, vendor):
+        self.vendor = vendor
+
 dev1 = Device(ip_addr='192.168.1.100',username='admin',password='admin')
 dev2 = Device(ip_addr='172.16.1.100',username='cisco',password='cisco')
 dev3 = Device(ip_addr='10.10.1.100',username='arista',password='arista')
@@ -37,3 +40,7 @@ dev3.display_login()
 print('Device 4:')
 dev4.display_ip()
 dev4.display_login()
+
+dev1.add_vendor('Cisco')
+
+print(dev1.vendor)
