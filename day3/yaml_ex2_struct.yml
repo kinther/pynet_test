@@ -1,0 +1,9 @@
+---
+- name: new_yml_file
+  city: seattle
+  state: washington
+
+- test: test
+- test2: test2
+- test3: test3
+  test4: [test5, test6, test7]
