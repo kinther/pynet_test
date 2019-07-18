@@ -1,0 +1,7 @@
+---
+- name: my_yml_file
+- age: 34
+- sex: male
+- dict1: key1
+  dict2: key2
+  dict3: key3
